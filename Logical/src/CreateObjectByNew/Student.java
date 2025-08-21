@@ -1,24 +1,32 @@
 package CreateObjectByNew;
 
 class Student {
-    //instance variables
+	public static void main(String[] args) {
+		SubStudent student = new SubStudent("sameer", 24);
+		System.out.println(student.name);
+		System.out.println(student.age);
+	}
+	
+}
+class SubStudent{
+//instance variables
 	
     String name;
     int age;
     
-    
+	SubStudent(){
+	    	System.out.println("constructor called");
+	    }
 
-	 Student(String n , int a) {
+    SubStudent(String n , int a) {
 		name = n;
 		age = a;
 	}
+    
+    
+    
+    
 	
-	 Student() {
-		
-	}
 	
-	void display() {
-		System.out.println("Name  "+ name);
-		System.out.println("Age "+ age);
-	}
+	
 }
